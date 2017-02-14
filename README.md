@@ -11,7 +11,8 @@ The following folders are in this solution:
 
 Also, you must change the ConnectionString constant in HomeController.cs to use your Azure SQL Database connection string.
 
-````public class HomeController : Controller
+```
+public class HomeController : Controller
 {
 	private const string ConnString = "ENTER YOUR AZURE SQL DB CONNECTION STRING HERE";
 	
@@ -19,7 +20,7 @@ Also, you must change the ConnectionString constant in HomeController.cs to use 
 	{
 		return View();
 	}
-````
+```
 **sql**: This folder contains Transact-SQL commands to replicate the table and stored procedures used in the demo.
 
 **template**: This folder contains an ARM template and parameter file for deploying the Azure resources needed to replicate this demo.

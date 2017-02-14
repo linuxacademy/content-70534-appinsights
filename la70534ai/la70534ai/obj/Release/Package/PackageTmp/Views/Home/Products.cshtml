@@ -1,0 +1,39 @@
+﻿@model List<la70534ai.Models.StoreProduct>
+@{
+    ViewData["Title"] = "List StoreProducts";
+}
+<div class="row">
+    <div class="col-md-12">
+        <h2>List StoreProducts</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Color</th>
+                    <th>Size</th>
+                    <th>Age Restricted?</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Description</td>
+                        <td>@item.Color</td>
+                        <td>@item.Size</td>
+                        <td>@item.AgeRestricted</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        @Html.ActionLink("Add StoreProduct", "Add", null, new { @class="btn btn-success" })
+    </div>
+</div>

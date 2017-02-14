@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "webappName": {
+            "value": ""
+        },
+        "hostingPlanName": {
+            "value": ""
+        },
+        "hostingEnvironment": {
+            "value": ""
+        },
+        "location": {
+            "value": "South Central US"
+        },
+        "webappSku": {
+            "value": "Basic"
+        },
+        "webappSkuCode": {
+            "value": "B1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "serverFarmResourceGroup": {
+            "value": ""
+        }
+        "administratorLogin": {
+            "value": ""
+        },
+        "administratorLoginPassword": {
+            "value": null
+        },
+        "collation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
+        },
+        "databaseName": {
+            "value": ""
+        },
+        "edition": {
+            "value": "Basic"
+        },
+        "requestedServiceObjectiveId": {
+            "value": ""
+        },
+        "maxSizeBytes": {
+            "value": "2147483648"
+        },
+        "serverName": {
+            "value": ""
+        },
+        "version": {
+            "value": "12.0"
+        },
+        "diagnosticStorageAccountId": {
+            "value": ""
+        },
+        "diagnosticsTemplate": {
+            "value": ""
+        },
+        "sampleName": {
+            "value": ""
+        },
+        "subscriptionId": {
+            "value": ""
+        }
+    }
+}
